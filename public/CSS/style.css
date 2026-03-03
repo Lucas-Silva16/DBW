@@ -1,0 +1,122 @@
+.Logotipo{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 20px;
+
+
+}
+
+nav{
+    background-color:lightgrey;
+    overflow: hidden;
+}
+
+nav>a{
+    float: left;
+    color:black;
+    text-align: center;
+    margin:0 14px 0 16px;
+    text-decoration:underline;
+
+}
+
+nav>a:hover{
+    color:blueviolet;
+}
+nav>a:active{
+    color:rgb(194, 160, 225);
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    margin-top:20px;
+    border:1px solid lightblue;
+}
+
+table td.color{
+    background-color:lightblue;
+}
+
+img.center{
+    margin:auto;
+    display:block;
+
+}
+
+section#livros>article>img{
+    height:250px;
+    width:250px;
+    
+}
+section#livros>article>img:hover{
+    transition:height 1s, width 2s;
+    height:500px;
+    width:500px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    color:grey;
+}
+:root{
+    --footer-height: 4rem;
+
+}
+body{
+    padding-bottom:var(--footer-height);
+}
+footer{
+    position:fixed;
+    background-color:black;
+    color:white;
+    text-align: center;
+    font-size:20px;
+    bottom:0;
+    width:100%;
+    clear:both;
+}
+
+button.dinheirinho{
+    display:block;
+    margin: 0 auto;
+    background-color:lightblue;
+    color:white;
+    font-size:20px;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+
+}
+button.dinheirinho:hover{
+    background-color:rgb(87, 195, 231);
+    color:rgb(255, 255, 255);
+    font-size:20px;
+    transition:height 0.5s, width 0.5s,color 1s, background-color 1s;
+}
+
+iframe{
+    display:block;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 540px){
+    nav>a{
+        float:left;
+        width:100%;
+    }
+    .Logotipo{
+        display:none;
+    }
+    article.livros>iframe{
+        width:100%;
+    }
+    article.livros>img{
+        max-width: 100%;
+        height: auto;
+        animation:none;
+    }
+
+}
