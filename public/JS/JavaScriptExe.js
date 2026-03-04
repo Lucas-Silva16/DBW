@@ -84,17 +84,41 @@ function somaArrays(){
 
 //Exercício 6
 
+const formulaUm = [
+  { piloto: "Schumacher", equipa: "Ferrari", reformado: true },
+  { piloto: "Verstappen", equipa: "Red Bull", reformado: false },
+  { piloto: "Alonso", equipa: "Aston Martin", reformado: false }
+];
+
 function formulaum(){
 
-formulaUm =
-
-[{piloto: "Schumacher", equipa: "Ferrari", reformado: true},
-
- {piloto: "Verstappen", equipa: "Red Bull",reformado: false },
-
- {piloto: "Alonso",equipa: "Aston Martin",reformado: false} ]
-
-
-
+for (let i =0; i < formulaUm.length; i++){
+    const p = formulaUm[i];
+    if(p.reformado ==true){
+        console.log(`O piloto ${p.piloto} esta reformado`)
+    } else {
+        console.log(`O piloto ${p.piloto} esta na equipa ${p.equipa}`)
+        }
+    }
 }
 
+// Desafio
+
+function imprimirCancao(elementos) {
+    let resultado = "";
+    
+    elementos.forEach(item => {
+        resultado += item; 
+    });
+    
+    console.log(resultado);
+}
+
+function stringConcat(callback, ...composicao) {
+    callback(composicao);
+}
+
+stringConcat(
+    imprimirCancao, 
+    "B", "e", "e", "t", "h", "o", "v", "e", "n", " ", "-", " ", "S", "i", "n", "f", "o", "n", "i", "a", " ", "n", ".", "º", " ", "9"
+);

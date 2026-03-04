@@ -102,6 +102,41 @@ iframe{
     margin: 20px auto;
 }
 
+
+.TopG{
+    font-size:50px;
+    color:rgb(161, 33, 33);
+    margin: 20px;
+
+}
+
+button.aura{
+    text-align: center;
+    background-color:rgb(63, 63, 61); 
+    color: white;
+    font-size: 15px;
+    height:40 px;
+    border-radius: 20px;
+    margin: 10px 0px 10px 0px;
+    display:block;
+    margin : 20px auto;
+
+
+}
+button.aura:hover{
+    background-color: aliceblue;
+    color:red;
+    transition: height 0.5s, width 0.5s,color 1s, background-color 1s;
+}
+
+body {
+    background-image: url('../images/macaco.jpg');
+    background-repeat: no-repeat;
+    background-position: center top 0px;
+    background-size: cover;
+
+}
+
 @media screen and (max-width: 540px){
     nav>a{
         float:left;
