@@ -129,13 +129,14 @@ button.aura:hover{
     transition: height 0.5s, width 0.5s,color 1s, background-color 1s;
 }
 
-body {
+
+/*body {
     background-image: url('../images/macaco.jpg');
     background-repeat: no-repeat;
     background-position: center top 0px;
     background-size: cover;
 
-}
+}*/
 
 @media screen and (max-width: 540px){
     nav>a{
